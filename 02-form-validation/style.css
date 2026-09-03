@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, "Seoge UI", Roboto, sans-serif;
+    background: #f2f4f7;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+    min-height: 100vh;
+}
+
+.app {
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 28px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.valid {
+    border-color: #22c55e;
+}
+
+input.invalid {
+    border-color: #ef4444;
+}
+
+.error {
+    display: block;
+    color: #ef4444;
+    font-size: 0.78rem;
+    margin-top: 4px;
+    min-height: 14px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 12px;
+    background: #3b82f6;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background: #4338ca;
+}
+
+button[type="submit"]:disabled {
+    background: #c7c7f5;
+    cursor: not-allowed;
+}
+
+.success-msg {
+    color: #22c55e;
+    font-size: 0.85rem;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 400px) {
+    .app {
+        padding: 20px;
+    }
+}
